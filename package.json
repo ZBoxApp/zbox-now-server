@@ -1,0 +1,20 @@
+{
+  "name": "zbox-now-server",
+  "version": "0.0.1",
+  "description": "ZBox Now Server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "parse",
+    "server"
+  ],
+  "author": "Patricio Bruna",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "parse-dashboard": "^1.0.14",
+    "parse-server": "^2.2.13"
+  }
+}
