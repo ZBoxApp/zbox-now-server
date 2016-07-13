@@ -7,11 +7,16 @@ set -e
 echo "ls /tmp"
 ls /tmp/
 if [ "$(ls /tmp/artifacts 2>/dev/null)" ]; then
+    echo "Copiando node modules"
     mv /tmp/artifacts/node_modules ./src
+    echo "Listando archivos copiados"
+    ls ./src
 fi
 
 echo "---> Installing application source"
 cp -Rf /tmp/src/. ./
+echo "Listando archivos"
+ls ./
 
 echo "---> Building your Node application from source"
 npm install -d
