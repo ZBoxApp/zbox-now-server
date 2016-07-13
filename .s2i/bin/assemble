@@ -8,7 +8,7 @@ echo "ls /tmp"
 ls /tmp/
 if [ "$(ls /tmp/artifacts 2>/dev/null)" ]; then
     echo "Copiando node modules"
-    mv /tmp/artifacts/node_modules ./src
+    mv /tmp/artifacts/node_modules ./src/
     echo "Listando archivos copiados"
     ls ./src
 fi
