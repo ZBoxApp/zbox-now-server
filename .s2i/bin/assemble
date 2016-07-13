@@ -8,10 +8,10 @@ echo "ls /tmp"
 ls /tmp/
 if [ "$(ls /tmp/artifacts 2>/dev/null)" ]; then
     echo "Copiando node modules"
-    mkdir -p ./src/node_modules
-    mv /tmp/artifacts/node_modules ./src/
+    mkdir -p ./node_modules
+    mv /tmp/artifacts/node_modules/* ./node_modules/
     echo "Listando archivos copiados"
-    ls ./src
+    ls ./
 fi
 
 echo "---> Installing application source"
